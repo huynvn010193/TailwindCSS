@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.layout-item {
+  height:500px
+}
+.layout {
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  grid-template-columns: calc(50% - 40px) calc(20% - 40px) 30%; /* chia cột */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 cột bằng nhau */
+  /* track-line 3 => số cột + 1 */
+  /* gap: gird-row-gap and gird-column-gap */
+  /* gap count = column count - 1 */
+  /* fr = free space: có bao nhiêu khoảng trống sẽ chiếm hết luôn */
+
+  grid-column-gap: 40px;
+}
