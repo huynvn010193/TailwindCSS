@@ -110,4 +110,71 @@ phần tử con
 grid-template-area : dùng cho tk con
 */
 
+.post-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /* 2 hàng luôn có height bằng nhau */
+  grid-gap: 25px;
+  grid-template-areas: 
+  "h1 h2 h3"
+  "h1 h4 h5";
+  padding: 25px;
+}
 
+.post-item:first-child {
+  grid-area: h1;
+}
+
+.post-item:nth-child(2) {
+  grid-area: h2;
+}
+
+.post-item:nth-child(3) {
+  grid-area: h3;
+}
+
+.post-item:nth-child(4) {
+  grid-area: h4;
+}
+
+.post-item:last-child {
+  grid-area: h5;
+}
+
+.post-image {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.post-image--large {
+  height: auto;
+}
+
+.post-content {
+  font-weight: 300;
+  padding: 25px 0px;
+  flex: 1; /* Chiếm hết tất cả các khoản trống còn lại */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+  color: #3f2a78;
+}
+
+.time-post {
+  color: #ccc;
+  text-transform: uppercase;
+}
