@@ -5,3 +5,14 @@
 5. npm run dev 
 
 Cài extention: Tailwindcss IntelliSense 
+
+lệnh watch : npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch
+
+Đơn vị rem: rem: Là đơn vị tham chiếu tỷ lệ so với phần tử gốc của một website dựa vào thuộc tính font-size, nghĩa là sẽ biến đổi tùy 
+theo giá trị của thuộc tính font-size trong thẻ <html>. Cũng như rem, nếu bạn khai báo font-size cho thẻ <html> là 16px thì 1rem = 16px
+
+Nếu bạn chưa thiết lập cỡ chỡ ở đâu trên trang thì mặc định cỡ chữ là 16px tương đương với 1em
+
+ Cú pháp jit-mode: text-[#ffa400]
+
+ reponsive design : https://tailwindcss.com/docs/responsive-design
