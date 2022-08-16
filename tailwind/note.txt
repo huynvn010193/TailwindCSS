@@ -16,3 +16,8 @@ Nếu bạn chưa thiết lập cỡ chỡ ở đâu trên trang thì mặc đ�
  Cú pháp jit-mode: text-[#ffa400]
 
  reponsive design : https://tailwindcss.com/docs/responsive-design
+
+ rounded: border-radius
+ transition-colors
+ hover cha -> con đổi màu -> dùng thuộc tính group
+ appearance-none: xóa đi mặc định của browser
