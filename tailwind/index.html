@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="./build/tailwind.css">
   <link rel="stylesheet" href="./build/app.css">
 </head>
@@ -126,8 +128,29 @@
       w-5 h-5
       border border-[#eee]
     "/>
-  <ul>
+  <!-- <ul>
     <li class="odd:bg-red-500">sasa</li>
-  </ul>
+    <li class="odd:bg-red-500">sasa</li>
+    <li class="odd:bg-red-500">sasa</li>
+  </ul> -->
+
+  <div
+   before=""
+  class="
+    w-10 
+    h-10 
+    flex items-center justify-center 
+    text-[#00aefd] 
+    mx-auto my-5
+    rounded-xl
+    relative
+    before:content-[attr(before)]
+    before:absolute before:inset-0
+    before:bg-current
+    before:rounded-xl
+    before:opacity-25
+  ">
+    <ion-icon name="airplane-outline"></ion-icon>
+  </div>
 </body>
 </html>
