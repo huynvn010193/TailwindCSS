@@ -22,8 +22,12 @@ Nếu bạn chưa thiết lập cỡ chỡ ở đâu trên trang thì mặc đ�
  hover cha -> con đổi màu -> dùng thuộc tính group
  appearance-none: xóa đi mặc định của browser
 
-use ionic icon: 
+use ionic icon: https://ionic.io/ionicons/usage
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 before: inset-0: top - right - bottom - left = 0;
+
+icon: https://free3dicon.com/
+
+// leading-tight là gì ?
