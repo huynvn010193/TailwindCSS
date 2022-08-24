@@ -4,6 +4,7 @@ module.exports = {
   purge: [
     "./**/*.html",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       margin: {

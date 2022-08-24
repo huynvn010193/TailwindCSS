@@ -20,15 +20,39 @@
   xl: 1280px
  -->
 <body>
-  <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5">
-    <div class="px-5 py-8 rounded-lg border border-[#eee]">
+  <label 
+    for="toggle"
+    class="
+      w-[100px] 
+      h-[40px] 
+      border border-[#ccc] 
+      rounded-full fixed 
+      right-5 bottom-5
+      z-50
+      p-[5px]
+      inline-block
+      cursor-pointer
+    ">
+    <input type="checkbox" name="" id="toggle" class="darkmode-input hidden" />
+    <div class="w-7 h-7 bg-[#ccc] rounded-full transition-all"></div>
+  </label>
+  <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5 ">
+    <div 
+      class="
+        px-5 py-8 
+        rounded-lg border 
+        border-[#eee] 
+        text-center bg-white
+        dark:bg-[#0F0D58]
+        dark:text-white
+      ">
       <img 
         src="https://free3dicon.com/wp-content/uploads/2022/04/improvement-300x300.png.webp"
         alt="" 
         class="mb-5 max-w-[100] mx-auto"
       />
-      <h3 class="text-lg font-semibold">Recommendation</h3>
-      <div class="text-sm leading-normal text-[#ccc] font-normal">
+      <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Recommendation</h3>
+      <div class="text-sm leading-loose text-[#9191B4] font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, delectus necessitatibus. Nulla unde vero illo dolor consectetur, 
         sit omnis pariatur nemo eum, repellat fugiat voluptas nihil suscipit consequatur, quisquam quis.
       </div>
