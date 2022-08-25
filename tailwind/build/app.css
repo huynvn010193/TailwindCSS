@@ -3,5 +3,10 @@ body {
 }
 
 .darkmode-input:checked + div {
+  background-color: #6a5af9;
+}
+
+.darkmode-input:checked + div .darkmode-spinner {
   transform : translate(60px);
+  background-color: white;
 }

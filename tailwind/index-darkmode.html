@@ -23,18 +23,23 @@
   <label 
     for="toggle"
     class="
-      w-[100px] 
-      h-[40px] 
-      border border-[#ccc] 
-      rounded-full fixed 
-      right-5 bottom-5
-      z-50
-      p-[5px]
       inline-block
       cursor-pointer
+      toggle-switch
     ">
     <input type="checkbox" name="" id="toggle" class="darkmode-input hidden" />
-    <div class="w-7 h-7 bg-[#ccc] rounded-full transition-all"></div>
+    <div
+      class="
+        w-[100px] 
+        h-[40px] 
+        border border-[#ccc] 
+        rounded-full fixed 
+        right-5 bottom-5
+        z-50
+        p-[5px]"
+    >
+      <div class="w-7 h-7 bg-[#ccc] rounded-full transition-all darkmode-spinner"></div>
+    </div>
   </label>
   <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5 ">
     <div 
@@ -58,5 +63,29 @@
       </div>
     </div>
   </div>
+  <script>
+    const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
+
+    // Function khi load lại 
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.documentElement.setAttribute('class', currentTheme);
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    // Function chạy
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('class', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('class', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+    toggleSwitch.addEventListener('change', switchTheme);
+  </script>
 </body>
 </html>
