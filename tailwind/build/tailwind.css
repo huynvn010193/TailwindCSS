@@ -410,6 +410,14 @@ video {
   height: auto;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -681,6 +689,10 @@ video {
   max-width: 80rem;
 }
 
+.max-w-\[1140px\] {
+  max-width: 1140px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -837,6 +849,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[50px\] {
+  font-size: 50px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -890,6 +906,11 @@ video {
 .text-\[\#00aefd\] {
   --tw-text-opacity: 1;
   color: rgb(0 174 253 / var(--tw-text-opacity));
+}
+
+.text-\[\#0B132A\] {
+  --tw-text-opacity: 1;
+  color: rgb(11 19 42 / var(--tw-text-opacity));
 }
 
 .outline-none {
