@@ -31,3 +31,6 @@ before: inset-0: top - right - bottom - left = 0;
 icon: https://free3dicon.com/
 
 // leading-tight là gì ?
+object-cover là gì ?
+
+@layer utilities : thêm những class mà tailwind chưa có

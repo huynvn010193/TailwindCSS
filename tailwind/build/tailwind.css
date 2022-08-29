@@ -613,6 +613,10 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
 .block {
   display: block;
 }
@@ -657,6 +661,10 @@ body {
   height: 2.5rem;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -693,6 +701,14 @@ body {
   max-width: 1140px;
 }
 
+.max-w-\[555px\] {
+  max-width: 555px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -701,6 +717,14 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.auto-cols-\[90\%\] {
+  grid-auto-columns: 90%;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 
 .grid-cols-4 {
@@ -733,6 +757,10 @@ body {
   row-gap: 1.75rem;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -743,6 +771,10 @@ body {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .border {
@@ -779,6 +811,11 @@ body {
   background-color: rgb(106 90 249 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F53838\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 56 56 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -794,6 +831,10 @@ body {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-5 {
@@ -828,6 +869,10 @@ body {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-center {
@@ -867,6 +912,10 @@ body {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-loose {
@@ -913,6 +962,11 @@ body {
   color: rgb(11 19 42 / var(--tw-text-opacity));
 }
 
+.text-\[\#4f5665\] {
+  --tw-text-opacity: 1;
+  color: rgb(79 86 101 / var(--tw-text-opacity));
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -923,6 +977,22 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+.scroll-snap-mandatory {
+  scroll-snap-type : x mandatory;
+}
+
+.scroll-snap-always {
+  scroll-snap-stop : always;
+}
+
+.scroll-snap-start {
+  scroll-snap-align : start;
+}
+
+/* .grid-layout {
+  @apply grid auto-cols-[90%] grid-flow-col overflow-x-auto scroll-snap-mandatoryscroll-snap-always scroll-snap-start gap-x-5
+} */
 
 .before\:absolute::before {
   content: var(--tw-content);

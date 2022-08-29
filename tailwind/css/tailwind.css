@@ -9,3 +9,20 @@
     font-family: "Rubik", sans-serif;
   }
 }
+@layer utilities {
+  @variants responsive {
+    .scroll-snap-mandatory {
+      scroll-snap-type : x mandatory;
+    }
+    .scroll-snap-always {
+      scroll-snap-stop : always;
+    }
+    .scroll-snap-start {
+      scroll-snap-align : start;
+    }
+  }
+}
+
+/* .grid-layout {
+  @apply grid auto-cols-[90%] grid-flow-col overflow-x-auto scroll-snap-mandatoryscroll-snap-always scroll-snap-start gap-x-5
+} */
