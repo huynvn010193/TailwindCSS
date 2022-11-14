@@ -6417,6 +6417,10 @@ video {
   height: 100vh;
 }
 
+.h-custom {
+  height: 620px;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -31227,6 +31231,60 @@ video {
   content: none;
 }
 
+/* Tạo custom class  */
+
+.c-link {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+.c-link:hover {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.c-link {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (min-width: 768px) {
+  .c-link {
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+  }
+}
+
+.c-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.9
+}
+
+@media (min-width: 768px) {
+  .c-menu {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -37048,6 +37106,10 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:h-custom {
+    height: 620px;
   }
 
   .sm\:max-h-0 {
@@ -67300,6 +67362,10 @@ video {
     height: 100vh;
   }
 
+  .md\:h-custom {
+    height: 620px;
+  }
+
   .md\:max-h-0 {
     max-height: 0px;
   }
@@ -97548,6 +97614,10 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-custom {
+    height: 620px;
   }
 
   .lg\:max-h-0 {
@@ -127800,6 +127870,10 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-custom {
+    height: 620px;
+  }
+
   .xl\:max-h-0 {
     max-height: 0px;
   }
@@ -158048,6 +158122,10 @@ video {
 
   .\32xl\:h-screen {
     height: 100vh;
+  }
+
+  .\32xl\:h-custom {
+    height: 620px;
   }
 
   .\32xl\:max-h-0 {
